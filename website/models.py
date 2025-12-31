@@ -1,0 +1,21 @@
+from django.db import models
+
+# Create your models here.
+class Contact(models.Model):
+    name=models.CharField(max_length=255)
+    email=models.EmailField()
+    subject=models.CharField(max_length=255, blank=True)
+    message=models.TextField()
+    created_date=models.DateTimeField(auto_now_add=True)
+    updated_date=models.DateTimeField(auto_now=True)
+    is_read = models.BooleanField(default=False)
+
+    def _str_(self):
+        return f"{self.name} — {self.subject or '(no subject)'}"
+    
+    
+    
+    class Meta:
+        ordering=['created_date']
+    
+ 
