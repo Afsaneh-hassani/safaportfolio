@@ -1701,3 +1701,76 @@ section.banner-blog .banner-caption h1 {
 .pdf-link i:hover {
     transform: scale(1.15);
 }
+
+
+
+
+
+
+
+
+
+
+
+/* جهت راست به چپ */
+.main-list,
+.sub-list-level-1,
+.sub-list-level-2 {
+  direction: rtl;
+  text-align: right;
+}
+
+/* حذف بولت پیش‌فرض */
+.main-list,
+.sub-list-level-1 {
+  list-style: none;
+  padding-right: 0;
+  margin: 0;
+}
+
+/* فاصله آیتم‌های لیست اصلی */
+.main-list > li {
+  margin-bottom: 24px;
+}
+
+/* عنوان هر سابقه */
+.main-list h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+/* آیتم‌های زیرلیست سطح اول */
+.sub-list-level-1 > li {
+  margin-bottom: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  padding-right: 18px;
+  color: #000;
+}
+
+/* بولت سفارشی RTL */
+.sub-list-level-1 > li::before {
+  content: "▪";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #000;
+}
+
+/* زیرلیست سطح دوم (۳تایی) */
+.sub-list-level-2 {
+  margin-top: 6px;
+  padding-right: 20px;
+  list-style: disc;
+}
+
+/* آیتم‌های جزئیات */
+.sub-list-level-2 li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: 1.7;
+  color: #000;
+}
