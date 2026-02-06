@@ -1920,3 +1920,242 @@ section.banner-blog .banner-caption h1 {
         padding: 10px;
     }
 }
+
+
+
+
+
+/*============ Projects Page Styles ============*/
+
+/* Projects List Section */
+.projects-list {
+    background-color: #ffffff;
+}
+
+.projects-list .project-item {
+    margin-bottom: 80px;
+    padding: 40px 0;
+    border-bottom: 2px solid #f2f2f2;
+    position: relative;
+}
+
+.projects-list .project-item:last-child {
+    border-bottom: none;
+}
+
+/* Project Gallery */
+.project-gallery {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.project-slider .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 10;
+}
+
+.project-slider .owl-nav button {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #222 !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-slider .owl-nav button:hover {
+    background: #222 !important;
+    color: #fff !important;
+    transform: scale(1.1);
+}
+
+.project-slider .owl-nav .owl-prev {
+    left: 15px;
+}
+
+.project-slider .owl-nav .owl-next {
+    right: 15px;
+}
+
+.project-slider .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-slider .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.project-slider .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    background: #ddd;
+    display: block;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.project-slider .owl-dots .owl-dot.active span,
+.project-slider .owl-dots .owl-dot:hover span {
+    background: #222;
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Project Content */
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.project-meta span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.project-meta span i {
+    margin-left: 8px;
+    color: #222;
+    font-size: 16px;
+}
+
+.project-content > p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Project Features */
+.project-features {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 25px;
+    border-right: 4px solid #222;
+}
+
+.project-features h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.project-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-features ul li {
+    padding: 8px 0;
+    padding-right: 25px;
+    position: relative;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.project-features ul li:before {
+    content: "✓";
+    position: absolute;
+    right: 0;
+    top: 8px;
+    color: #222;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
+/* Projects Section in Main Page */
+/* ==============================
+   FIX OWL CAROUSEL (CRITICAL)
+   ============================== */
+
+/* ==============================
+   OWL CAROUSEL RTL FIX
+   ============================== */
+
+.owl-carousel {
+    direction: ltr !important;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+}
+
+.owl-carousel .owl-item {
+    float: none !important;
+}
+
+.owl-carousel .item {
+    direction: rtl;
+}
+
+.owl-stage-outer {
+    overflow: hidden;
+}
+
+/* برای project slider */
+.project-slider {
+    direction: ltr !important;
+}
+
+.project-slider .item {
+    direction: rtl;
+}
+
+.project-slider .owl-item {
+    float: none !important;
+}
+
+
+/* تنظیم موقعیت دکمه‌ها */
+.project-slider .owl-nav button.owl-prev {
+    left: auto !important;
+    right: 15px !important;
+}
+
+.project-slider .owl-nav button.owl-next {
+    right: auto !important;
+    left: 15px !important;
+}

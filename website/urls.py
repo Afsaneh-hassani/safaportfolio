@@ -5,6 +5,8 @@ app_name='website'
 
 urlpatterns = [
     path('', index, name='index'),
+    path('certificate/', certificate, name='certificate'),
+    path('projects/', projects, name='projects')
     
 ]
 

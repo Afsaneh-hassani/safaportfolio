@@ -22,3 +22,11 @@ def index(request):
         return redirect("/")
 
     return render(request, "website/index.html") 
+
+
+def certificate(request):
+    return render(request, 'website/certificate.html')
+
+
+def projects(request):
+    return render(request, 'website/projects.html')
