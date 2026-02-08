@@ -2159,3 +2159,223 @@ section.banner-blog .banner-caption h1 {
     right: auto !important;
     left: 15px !important;
 }
+
+/*============ Projects Preview Section ============*/
+
+.projects-preview {
+    background-color: #ffffff;
+    direction: rtl;
+}
+
+/* Section Heading */
+.projects-preview .heading {
+    margin-bottom: 60px;
+}
+
+.projects-preview .heading h6 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.projects-preview .heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222;
+}
+
+/* Projects Grid */
+.projects-grid {
+    margin-bottom: 30px;
+}
+
+/* Project Card */
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Image */
+.project-card-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-card-image img {
+    transform: scale(1.1);
+}
+
+/* Project Content */
+.project-card-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    min-height: 56px;
+}
+
+.project-card-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+/* Project Meta */
+.project-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+    margin-top: auto;
+}
+
+.project-card-meta span {
+    font-size: 13px;
+    color: #888;
+    display: flex;
+    align-items: center;
+}
+
+.project-card-meta span i {
+    margin-left: 6px;
+    color: #222;
+    font-size: 14px;
+}
+
+/* Projects Button */
+.projects-button {
+    margin-top: 20px;
+}
+
+.projects-button .main-btn {
+    display: inline-block;
+    background-color: #222;
+    padding: 12px 30px;
+    border: 2px solid #222;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.projects-button .main-btn:hover {
+    color: #222;
+    background-color: transparent;
+}
+
+/* Responsive Design */
+
+/* Tablet - 2 cards per row */
+@media screen and (max-width: 991px) {
+    .projects-preview .heading h2 {
+        font-size: 28px;
+    }
+    
+    .project-card-image {
+        height: 220px;
+    }
+    
+    .project-card-content h4 {
+        font-size: 18px;
+        min-height: auto;
+    }
+}
+
+/* Mobile - 1 card per row */
+@media screen and (max-width: 767px) {
+    .projects-preview .heading h2 {
+        font-size: 24px;
+    }
+    
+    .projects-preview .heading h6 {
+        font-size: 14px;
+    }
+    
+    .project-card {
+        margin-bottom: 25px;
+    }
+    
+    .project-card-image {
+        height: 200px;
+    }
+    
+    .project-card-content {
+        padding: 20px;
+    }
+    
+    .project-card-content h4 {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    
+    .project-card-content p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .project-card-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .project-card-meta span {
+        font-size: 12px;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .projects-preview {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .projects-preview .heading {
+        margin-bottom: 40px;
+    }
+    
+    .project-card-image {
+        height: 180px;
+    }
+}
