@@ -57,10 +57,20 @@
                         <!--Nav Links-->
                         <li class="nav-item">
                             <a href="#" class="nav-link active" data-scroll-nav="0">خانه</a>
+                            
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-scroll-nav="1">درباره من</a>
-                        </li>
+                        <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" id="aboutDropdown" role="button" 
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-scroll-index="1">
+        درباره 
+    </a>
+    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+        <a class="dropdown-item" href="/#درباره من">درباره من</a>
+        <a class="dropdown-item" href="/#رزومه">رزومه</a>
+        <a class="dropdown-item" href="/#گواهینامه">گواهینامه ها</a>
+        <a class="dropdown-item" href="/#پروژه">پروژه ها</a>
+    </div>
+</li>
                         <li class="nav-item">
                             <a href="#" class="nav-link" data-scroll-nav="2">سرویس ها</a>
                         </li>
@@ -129,25 +139,61 @@
         </footer>
         <!--Footer End-->
 
-        <!--Jquery js-->
-        <script src="{% static 'js/jquery.min.js' %}"></script>
-        <!--Bootstrap js-->
-        <script src="{% static 'js/bootstrap.min.js' %}"></script>
-        <!--Stellar js-->
-        <script src="{% static 'js/jquery.stellar.js' %}"></script>
-        <!--Animated Headline js-->
-        <script src="{% static 'js/animated.headline.js' %}"></script>
-        <!--Owl Carousel js-->
-        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-        <!--ScrollIt js-->
-        <script src="{% static 'js/scrollIt.min.js' %}"></script>
-        <!--Isotope js-->
-        <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
-        <!--Magnific Popup js-->
-        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-        <!--Site Main js-->
-        <script src="{% static 'js/main.js' %}"></script>
+       
+    <!--Jquery js-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!--Bootstrap js-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!--Stellar js-->
+    <script src="{% static 'js/jquery.stellar.js' %}"></script>
+    <!--Animated Headline js-->
+    <script src="{% static 'js/animated.headline.js' %}"></script>
+    <!--Owl Carousel js-->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!--ScrollIt js-->
+    <script src="{% static 'js/scrollIt.min.js' %}"></script>
+    <!--Isotope js-->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!--Magnific Popup js-->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <!--Particles js-->
+    <script src="{% static 'js/particles.min.js' %}"></script>
+    <!--Site Main js-->
+    <script src="{% static 'js/main.js' %}"></script>
+    
+    <script>
+    // Particles
+    particlesJS.load('particles-js', "{% static 'js/particles.json' %}", function() {
+        console.log('callback - particles.js config loaded');
+    });
 
+    // Initialize project sliders
+    $(document).ready(function(){
+        $('.project-slider').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            nav: true,
+            navText: ['<i class="fa fa-chevron-right"></i>', '<i class="fa fa-chevron-left"></i>'],
+            dots: true,
+            rtl: false,  // این را false کنید
+            margin: 0,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    });
+</script>
     </body>
 </html>
 
