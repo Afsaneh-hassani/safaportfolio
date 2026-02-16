@@ -10,7 +10,7 @@
         <meta name="description" content="Kalvin Portfolio Template">
         <meta name="author" content="cosmos-themes">
 
-        <title>قالب تک صفحه ای رزومه و نمونه کار | نت کپی مرجع قالب و اسکریپت فارسی</title>
+        <title> Mohammadreza Safa Portfolio     </title>
 
         <!-- favicon -->
         <link href="{% static 'images/favicon.ico' %}" rel="icon" type="image/png">
@@ -44,9 +44,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <!-- LOGO -->
-                <a class="navbar-brand logo" href="index.html">
-                    نت کپی
-                </a>
+                {% comment %} <a class="navbar-brand logo" href="index.html">
+                   <span> شماره پروانه اشتغال: 18-300-01013</span>
+                   <span> شماره عضویت: 18-3-0-02530</span>
+                </a> {% endcomment %}
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -56,7 +57,7 @@
                     <ul class="navbar-nav ml-auto">
                         <!--Nav Links-->
                         <li class="nav-item">
-                            <a href="#" class="nav-link active" data-scroll-nav="0">خانه</a>
+                            <a href="/" class="nav-link active" >خانه</a>
                             
                         </li>
                         <li class="nav-item dropdown">
@@ -67,19 +68,19 @@
     <div class="dropdown-menu" aria-labelledby="aboutDropdown">
         <a class="dropdown-item" href="/#درباره من">درباره من</a>
         <a class="dropdown-item" href="/#رزومه">رزومه</a>
-        <a class="dropdown-item" href="/#گواهینامه">گواهینامه ها</a>
-        <a class="dropdown-item" href="/#پروژه">پروژه ها</a>
+        <a class="dropdown-item" href="/#گواهینامه">گواهینامه&#8204;ها</a>
+        <a class="dropdown-item" href="/#پروژه">پروژه&#8204;ها</a>
     </div>
 </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-scroll-nav="2">سرویس ها</a>
+                            <a href="{% url 'website:certificate' %}" class="nav-link" >گواهینامه&#8204;ها</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-scroll-nav="3">نمونه کارها</a>
+                            <a href="{% url 'website:projects' %}" class="nav-link" >پروژه&#8204;ها </a>
                         </li>
-                        <li class="nav-item">
+                        {% comment %} <li class="nav-item">
                             <a href="#" class="nav-link" data-scroll-nav="4">وبلاگ</a>
-                        </li>
+                        </li> {% endcomment %}
                         <li class="nav-item">
                             <a href="#" class="nav-link" data-scroll-nav="5">تماس با من</a>
                         </li>

@@ -2381,3 +2381,15 @@ section.banner-blog .banner-caption h1 {
 }
 
 
+.banner-license {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.banner-license p {
+    margin: 0;
+    font-size: 8px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
