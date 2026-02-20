@@ -63,15 +63,26 @@
                             <p>با اعتقاد به اینکه موفقیت در این رشته مستلزم تقویت مهارت‌های عمومی و تسلط نسبی بر حوزه‌های مختلف اجرایی و مدیریتی است، همواره تلاش کرده‌ام علی‌رغم چالش‌ها و سختی‌های موجود، تجربیات ارزشمندی در پروژه‌های گوناگون کسب نموده و دانش فنی و مدیریتی خود را به‌طور مستمر توسعه دهم. امید است این تجربیات برای همکاران و کارفرمایان محترم مفید و کارآمد واقع گردد.</p>
                             <p>در طول فعالیت حرفه‌ای خود، همواره متعهد به رعایت استانداردهای کیفی، اصول ایمنی و بهره‌گیری از فناوری‌های نوین در راستای اجرای به‌موقع و بهینه پروژه‌ها بوده‌ام و سابقه موفقی در اتمام پروژه‌های صنعتی پیش از موعد مقرر دارم. همچنین از توانایی کار مؤثر در تیم‌های چندتخصصی، برقراری ارتباط سازنده با ذی‌نفعان پروژه به‌منظور حل مسائل و بهینه‌سازی فرایندها برخوردار می‌باشم.</p>
                             <!--About Social Icons-->
-                            <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </div>
+                          <div class="social-icons">
+    <a href="#" onclick="toggleInfo('email-info'); return false;">
+        <i class="fa fa-envelope"></i>
+        <span id="email-info" class="info-tooltip">
+            Safa@Omranmokranco.com<br>
+            mohammadreza_Safa@yahoo.com
+        </span>
+    </a>
+    
+    <a href="#" onclick="toggleInfo('phone-info'); return false;">
+        <i class="fa fa-phone"></i>
+        <span id="phone-info" class="info-tooltip">09133416110</span>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/mohammadreza-safa-5b158449?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+        <i class="fa fa-linkedin"></i>
+    </a>
+</div>
                             <span class="about-button">
-                                <a class="main-btn" href="#">دانلود رزومه</a>
+                                <a class="main-btn" href="{% static 'papers/resume.pdf' %}">دانلود رزومه</a>
                             </span>
                         </div>
                     </div>
@@ -92,9 +103,7 @@
   <h2>رزومه</h2>
   <p>
     
-    <a href="{% static 'papers/Afsaneh_Hassani_Resume.pdf' %}" target="_blank" class="pdf-link ms-2" title="Download Full Resume">
-      <i class="bi bi-file-pdf-fill text-danger fs-5"></i>
-    </a>
+    
   </p>
 </div><!-- End Section Title -->
 
@@ -117,25 +126,34 @@
 
             <h3 class="resume-title">تحصیلات</h3>
             <div class="resume-item">
-              <h4>	کارشناسی مهندسی عمران</h4>
-              <h5>۱۳۷۶ تا ۱۳۸۱</h5>
-              <p><em>دانشگاه شهید باهنر کرمان (دولتی) – کرمان</em></p>
-             
-            </div><!-- Edn Resume Item -->
+    <h4>کارشناسی مهندسی عمران
+        <a href="{% static 'papers/madrak1.pdf' %}" target="_blank" class="pdf-icon">
+            <i class="fa fa-file-pdf-o"></i>
+        </a>
+    </h4>
+    <h5>۱۳۷۶ تا ۱۳۸۱</h5>
+    <p><em>دانشگاه شهید باهنر کرمان (دولتی) – کرمان</em></p>
+</div>
 
-            <div class="resume-item">
-              <h4>	کارشناسی ارشد مدیریت اجرایی (MBA)</h4>
-              <h5>۱۳۹۰ تا ۱۳۹۲</h5>
-              <p><em>سازمان مدیریت صنعتی (علمی ـ کاربردی) – کرمان</em></p>
-              
-            </div><!-- Edn Resume Item -->
+<div class="resume-item">
+    <h4>کارشناسی ارشد مدیریت اجرایی (MBA)
+        <a href="{% static 'papers/madrak2.pdf' %}" target="_blank" class="pdf-icon">
+            <i class="fa fa-file-pdf-o"></i>
+        </a>
+    </h4>
+    <h5>۱۳۹۰ تا ۱۳۹۲</h5>
+    <p><em>سازمان مدیریت صنعتی (علمی ـ کاربردی) – کرمان</em></p>
+</div>
 
-            <div class="resume-item">
-              <h4>	پروانه نظارت پایه یک عمران</h4>
-              <h5>فروردین ۱۳۸۵</h5>
-              <p><em>صادره از سازمان نظام مهندسی ساختمان استان کرمان</em></p>
-             
-            </div><!-- Edn Resume Item -->
+<div class="resume-item">
+    <h4>پروانه نظارت پایه یک عمران
+        <a href="{% static 'papers/madrak3.pdf' %}" target="_blank" class="pdf-icon">
+            <i class="fa fa-file-pdf-o"></i>
+        </a>
+    </h4>
+    <h5>فروردین ۱۳۸۵</h5>
+    <p><em>صادره از سازمان نظام مهندسی ساختمان استان کرمان</em></p>
+</div>
             <h3 class="resume-title">سـوابق شغلی و اجرایی </h3>
 
 <div class="resume-item pb-0">
@@ -953,6 +971,120 @@
         </section>
         <!--Testimonials Section End--> {% endcomment %}
 
+        <!--
+=======================================================
+  این بخش را در index.html خود قبل از بخش Contact اضافه کنید
+  (قبل از: <section class="contact pt-100 pb-100" ...>)
+=======================================================
+-->
+
+<!--Appreciation Preview Section Start-->
+<section id="تقدیرنامه" class="appreciation-preview pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="heading text-center">
+                    <h6>تقدیرنامه‌ها</h6>
+                    <h2>تقدیرنامه‌های دریافتی</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row appreciation-preview-items">
+
+            <!--Appreciation Item 1-->
+            <div class="col-lg-3 col-md-4 col-sm-6 item">
+                <div class="item-content">
+                    <img src="{% static 'images/appreciations/apprec1.jpeg' %}" alt="">
+                    <div class="item-overlay">
+                        <div class="icons">
+                            <span class="icon link">
+                                <a href="{% static 'images/appreciations/appr-1.jpeg' %}">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h6>قرارگاه سازندگی خاتم</h6>
+                    <p>پروژه خط انتقال آب شرب شهر کرمان</p>
+                </div>
+            </div>
+
+            <!--Appreciation Item 2-->
+            <div class="col-lg-3 col-md-4 col-sm-6 item">
+                <div class="item-content">
+                    <img src="{% static 'images/appreciations/apprec2.jpeg' %}" alt="">
+                    <div class="item-overlay">
+                        <div class="icons">
+                            <span class="icon link">
+                                <a href="{% static 'images/appreciations/apprec2.jpeg' %}">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h6>قرارگاه سازندگی خاتم</h6>
+                    <p>پروژه کارخانه فولاد بافت</p>
+                </div>
+            </div>
+
+            <!--Appreciation Item 3-->
+            <div class="col-lg-3 col-md-4 col-sm-6 item">
+                <div class="item-content">
+                    <img src="{% static 'images/appreciations/apprec3.jpeg' %}" alt="">
+                    <div class="item-overlay">
+                        <div class="icons">
+                            <span class="icon link">
+                                <a href="{% static 'images/appreciations/apprec3.jpeg' %}">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h6>قرارگاه سازندگی خاتم</h6>
+                    <p>پروژه قطعه هشتم خط انتقال گاز سراسری</p>
+                </div>
+            </div>
+
+            <!--Appreciation Item 4-->
+            <div class="col-lg-3 col-md-4 col-sm-6 item">
+                <div class="item-content">
+                    <img src="{% static 'images/appreciations/apprec4.jpg' %}" alt="">
+                    <div class="item-overlay">
+                        <div class="icons">
+                            <span class="icon link">
+                                <a href="{% static 'images/appreciations/apprec4.jpg' %}">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h6>Shanghai Gymta Industrial Development Co., Ltd</h6>
+                    <p>Appreciation Letter on ROIV Installation</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- دکمه مشاهده بیشتر -->
+        <div class="row">
+            <div class="col text-center">
+                <div class="appreciation-button pt-40">
+                    <a class="main-btn" href="appreciation/">مشاهده تمامی تقدیرنامه‌ها</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Appreciation Preview Section End-->
+
         <!--Contact Section Start-->
        
         <section class="contact pt-100 pb-100" data-scroll-index="5">
@@ -995,5 +1127,18 @@
             </div>
         </section>
         <!--Contact Section End-->
+        
+<script>
+function toggleInfo(id) {
+    var allTooltips = document.querySelectorAll('.info-tooltip');
+    allTooltips.forEach(function(tooltip) {
+        if (tooltip.id !== id) {
+            tooltip.style.display = 'none';
+        }
+    });
 
+    var el = document.getElementById(id);
+    el.style.display = el.style.display === 'none' ? 'block' : 'none';
+}
+</script>
          {% endblock %} 

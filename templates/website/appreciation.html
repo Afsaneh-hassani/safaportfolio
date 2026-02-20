@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <section class="banner-blog">
+            <div id="particles-js"></div>
+            <div class="banner-caption text-center">
+                <h1>تقدیرنامه‌ها</h1>
+                <div class="bread-crumb mt-10">
+                    <a href="index.html">خانه</a>
+                    <a href="#">تقدیرنامه‌ها</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Appreciations List Section Start-->
+        <section class="appreciations appreciations-page pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="heading text-center mb-50">
+                            <h2>تمامی تقدیرنامه‌ها</h2>
+                            <p>مجموعه کامل تقدیرنامه‌های دریافتی از کارفرمایان و سازمان‌های معتبر</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row appreciations-items">
+
+                    <!--Appreciation Item-->
+                    <div class="col-lg-3 col-md-4 col-sm-6 item">
+                        <div class="item-content">
+                            <img src="{% static 'images/appreciations/apprec1.jpeg' %}" alt="">
+                            <div class="item-overlay">
+                                <div class="icons">
+                                    <span class="icon link">
+                                        <a href="{% static 'images/appreciations/apprec1.jpeg' %}">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h6>قرارگاه سازندگی خاتم</h6>
+                            <p>پروژه خط انتقال آب شرب شهر کرمان</p>
+                        </div>
+                    </div>
+
+                    <!--Appreciation Item-->
+                    <div class="col-lg-3 col-md-4 col-sm-6 item">
+                        <div class="item-content">
+                            <img src="{% static 'images/appreciations/apprec2.jpeg' %}" alt="">
+                            <div class="item-overlay">
+                                <div class="icons">
+                                    <span class="icon link">
+                                        <a href="{% static 'images/appreciations/apprec2.jpeg' %}">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h6>قرارگاه سازندگی خاتم</h6>
+                            <p>پروژه کارخانه فولاد بافت</p>
+                        </div>
+                    </div>
+
+                    <!--Appreciation Item-->
+                    <div class="col-lg-3 col-md-4 col-sm-6 item">
+                        <div class="item-content">
+                            <img src="{% static 'images/appreciations/apprec3.jpeg' %}" alt="">
+                            <div class="item-overlay">
+                                <div class="icons">
+                                    <span class="icon link">
+                                        <a href="{% static 'images/appreciations/apprec3.jpeg' %}">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h6>قرارگاه سازندگی خاتم</h6>
+                            <p>پروژه قطعه هشتم خط انتقال گاز سراسری</p>
+                        </div>
+                    </div>
+
+                    <!--Appreciation Item-->
+                    <div class="col-lg-3 col-md-4 col-sm-6 item">
+                        <div class="item-content">
+                            <img src="{% static 'images/appreciations/apprec4.jpg' %}" alt="">
+                            <div class="item-overlay">
+                                <div class="icons">
+                                    <span class="icon link">
+                                        <a href="{% static 'images/appreciations/apprec4.jpg' %}">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h6>Shanghai Gymta Industrial Development Co., Ltd</h6>
+                            <p>Appreciation Letter on ROIV Installation</p>
+                        </div>
+                    </div>
+
+                    <!-- آیتم‌های بیشتر را اینجا اضافه کنید -->
+
+                </div>
+            </div>
+        </section>
+        <!--Appreciations List Section End-->
+
+{% endblock %}

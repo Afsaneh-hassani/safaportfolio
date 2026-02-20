@@ -2393,3 +2393,336 @@ section.banner-blog .banner-caption h1 {
     font-weight: 400;
     letter-spacing: 0.5px;
 }
+
+
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #555;
+}
+
+.info-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 13px;
+    z-index: 100;
+}
+
+.info-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #333;
+}
+
+
+
+.resume-item h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pdf-icon {
+    color: #e74c3c;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.pdf-icon:hover {
+    color: #c0392b;
+}
+
+
+
+
+
+/* ============================================
+   Appreciations Section - appreciations.css
+   ============================================ */
+
+/* ---- صفحه تقدیرنامه‌ها ---- */
+.appreciations {
+    background-color: inherit;
+}
+
+.appreciations-items {
+    margin-top: 50px;
+}
+
+.appreciations-items .item {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.appreciations-items .item-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.appreciations-items .item-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.appreciations-items .item-content:hover img {
+    transform: scale(1.1);
+}
+
+.appreciations-items .item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.appreciations-items .item-content:hover .item-overlay {
+    opacity: 1;
+}
+
+.appreciations-items .item-info {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.appreciations-items .item-info h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.appreciations-items .item-info p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+.appreciations-items .item-overlay .icons .icon {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.appreciations-items .item-overlay .icons .icon a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.appreciations-items .item-overlay .icons .icon a:hover {
+    background: #fff;
+    color: #222;
+}
+
+/* ---- بخش تقدیرنامه در صفحه اصلی (index) ---- */
+.appreciation-preview {
+    background-color: #f9f9f9;
+    direction: rtl;
+}
+
+.appreciation-preview .heading {
+    margin-bottom: 50px;
+}
+
+.appreciation-preview .heading h6 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.appreciation-preview .heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.appreciation-preview .appreciation-preview-items {
+    margin-top: 20px;
+}
+
+.appreciation-preview .appreciation-preview-items .item {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.appreciation-preview .appreciation-preview-items .item-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.appreciation-preview .appreciation-preview-items .item-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.appreciation-preview .appreciation-preview-items .item-content:hover img {
+    transform: scale(1.1);
+}
+
+.appreciation-preview .appreciation-preview-items .item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.appreciation-preview .appreciation-preview-items .item-content:hover .item-overlay {
+    opacity: 1;
+}
+
+.appreciation-preview .appreciation-preview-items .item-overlay .icons .icon {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.appreciation-preview .appreciation-preview-items .item-overlay .icons .icon a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.appreciation-preview .appreciation-preview-items .item-overlay .icons .icon a:hover {
+    background: #fff;
+    color: #222;
+}
+
+.appreciation-preview .appreciation-preview-items .item-info {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.appreciation-preview .appreciation-preview-items .item-info h6 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.appreciation-preview .appreciation-preview-items .item-info p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+/* دکمه مشاهده بیشتر */
+.appreciation-button {
+    margin-top: 20px;
+}
+
+.appreciation-button .main-btn {
+    display: inline-block;
+    background-color: #222;
+    padding: 12px 30px;
+    border: 2px solid #222;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.appreciation-button .main-btn:hover {
+    color: #222;
+    background-color: transparent;
+}
+
+/* ---- Responsive ---- */
+
+/* Tablet: 2 آیتم در هر سطر */
+@media (max-width: 991px) and (min-width: 768px) {
+    .appreciations-items .col-md-4,
+    .appreciation-preview .appreciation-preview-items .col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+/* Mobile: 2 آیتم در هر سطر */
+@media (max-width: 767px) {
+    .appreciations-items .col-sm-6,
+    .appreciation-preview .appreciation-preview-items .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .appreciations-items .item,
+    .appreciation-preview .appreciation-preview-items .item {
+        padding: 10px;
+    }
+
+    .appreciation-preview .heading h2 {
+        font-size: 24px;
+    }
+}
