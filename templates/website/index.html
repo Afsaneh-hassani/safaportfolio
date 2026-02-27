@@ -1100,19 +1100,20 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <!--Contact Form-->
-                        <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' />
+                        <form id='contact-form' method='POST' action="{% url 'website:contact' %}">
+                           {% csrf_token %}
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <!--name-->
-                                    <input type="text" class="form-control con-validate" id="contact-name" placeholder="نام" minlength=3 >
+                                    <input type="text" class="form-control con-validate" id="contact-name" placeholder="نام" minlength=3  name="name">
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <!--email-->
-                                    <input type="email" class="form-control con-validate" id="contact-email" placeholder="ایمیل" >
+                                    <input type="email" class="form-control con-validate" id="contact-email" placeholder="ایمیل" name="email">
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <!--message box-->
-                                    <textarea class="form-control con-validate" id="contact-message" placeholder="چگونه ما میتوانیم به شما کمک کنیم؟" rows=6 ></textarea>
+                                    <textarea class="form-control con-validate" id="contact-message" placeholder="چگونه ما میتوانیم به شما کمک کنیم؟" rows=6  name="message"></textarea>
                                 </div>
                                 <div class="col-md-12 text-center">
                                     <!--contact button-->
@@ -1140,5 +1141,21 @@ function toggleInfo(id) {
     var el = document.getElementById(id);
     el.style.display = el.style.display === 'none' ? 'block' : 'none';
 }
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this),
+        headers: { 'X-CSRFToken': '{{ csrf_token }}' }
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === 'success') {
+            alert(data.message);
+            this.reset();
+        }
+    });
+});
 </script>
          {% endblock %} 

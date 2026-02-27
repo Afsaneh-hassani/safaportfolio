@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 from .forms import ContactForm
 from .models import Contact
@@ -10,18 +11,18 @@ def index_view(request):
 
 # Create your views here
 
-def index(request):
-    if request.method == "POST":
-        Contact.objects.create(
-            name=request.POST.get("name"),
-            email=request.POST.get("email"),
-            subject=request.POST.get("subject"),
-            message=request.POST.get("message"),
-        )
-        messages.success(request, "Your message has been sent. Thank you!")
-        return redirect("/")
 
-    return render(request, "website/index.html") 
+@require_POST
+def contact_view(request):
+    form = ContactForm(request.POST)
+    if form.is_valid():
+        form.save()
+        return JsonResponse({'status': 'success', 'message': 'پیام شما با موفقیت ارسال شد!'})
+    return JsonResponse({'status': 'error', 'errors': form.errors}, status=400)
+
+
+def index(request):
+    return render(request, 'website/index.html') 
 
 
 def certificate(request):
